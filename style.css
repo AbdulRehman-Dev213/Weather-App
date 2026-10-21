@@ -177,3 +177,30 @@ body {
   color: var(--purple-900);
   display: none;
  }
+ /* ===== Responsive: phones (480px and below) ===== */
+@media (max-width: 480px) {
+  /* The card shrinks to fit the screen instead of staying 26rem wide */
+  .container {
+    width: 90%;
+    margin: 1rem 0;
+    padding: 1.5rem 0;
+  }
+
+  /* Smaller weather icon and error image */
+  img {
+    width: 50%;
+  }
+
+  /* Wind and humidity cards stack instead of sitting side by side */
+  #weatherInfo .details {
+    flex-direction: column;
+  }
+}
+
+/* ===== Responsive: short screens (e.g. phone in landscape) ===== */
+@media (max-height: 600px) {
+  /* Lets the page scroll so nothing gets cut off */
+  body {
+    overflow: auto;
+  }
+}
