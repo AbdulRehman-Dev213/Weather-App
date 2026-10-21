@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="input-area">
+            <input type="text" id="locationInput" placeholder="Enter a location" />
+            <button id="searchBtn"><i class="fa-solid fa-search"></i></button>
+        </div>
+        <div id="error">
+            <img src="assets/404.png" alt="">
+            <p>Invalid City Name</p>
+        </div>
+
+        <div id="weatherInfo">
+            <div>
+                <img src="assets/clear.png" alt="sun" id="weatherImg">
+                <h1 id="temperature">isamabad</h1>
+                <h2 id="cityName">22.C</h2>
+            </div>
+
+
+            <div class="details">
+                <div class="col ">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p class="detail-label">Wind speed</p>
+                        <p id="wind" class="detail-value">2.38 km/h</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <p class="detail-label">Humidity</p>
+                        <p id="humidity" class="detail-value">53%</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
